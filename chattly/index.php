@@ -161,8 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['message'])) {
 
     // send to database
     function sendMessage() {
-      var messageInput = document.getElementById('messageInput');
-      var message = messageInput.value.trim();
+      var messageInput = document.getElementById('messageInput').value.trim();
 
       if (message !== '') {
         var xhr = new XMLHttpRequest();
